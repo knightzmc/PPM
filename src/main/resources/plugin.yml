@@ -1,6 +1,6 @@
 name: PluginPackageManager
 version: @version@
 main: me.bristermitten.ppm.PPM
-api-version: 1.13
+api-version: 1.16
 authors: [BristerMitten]
 description: A package manager for Minecraft Plugins
