@@ -26,11 +26,10 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.3-R0.1-SNAPSHOT'
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 
-    implementation 'com.google.inject:guice:4.2.3'
-    implementation 'dev.misfitlabs.kotlinguice4:kotlin-guice:1.4.1'
-
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'org.apache.commons:commons-text:1.9'
+
 
     compileOnly 'org.yaml:snakeyaml:1.26'
 
