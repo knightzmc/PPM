@@ -21,11 +21,11 @@ class PPM : JavaPlugin()
         val injector = Guice.createInjector(PPMModule(this, repo, pluginsDirectory))
 
 //        val metadataExtractor = PluginYMLMetadataExtractor()
-        val downloader = DefaultPackageDownloader(repo ,pluginsDirectory )
+//        val downloader = DefaultPackageDownloader(repo ,pluginsDirectory )
 //        val packageManager = PluginPackageManager(downloader)
-        val manager = PaperCommandManager(this)S
-        val command = PPMCommand(repo, packageManager)
-        manager.registerCommand(command)
+        val manager = PaperCommandManager(this)
+//        val command = PPMCommand(repo, packageManager)
+        manager.registerCommand(injector.getInstance<PPMCommand>())
 
     }
 }
